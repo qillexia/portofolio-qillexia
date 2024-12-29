@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box; 
+}
+
+*{
+    margin: 0; 
+    padding: 0; 
+}
+
+ul[role='list'], ol[role='list']{
+    list-style: none; 
+}
+
+html:focus-within{
+    scroll-behavior: smooth; 
+}
+
+a:not([class]){
+    text-decoration-skip-ink: auto; 
+}
+
+img, picture, svg, video, canvas{
+    max-width: 100%;
+    height: auto; 
+    vertical-align: middle; 
+    font-style: italic; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+input, button, textarea, select{
+    font: inherit; 
+}
+
+@media (prefers-reduced-motion: reduce){
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+        transition: none;
+    }
+}
+
+
+
+body {
+    font-family: "Poppins";
+    background-color: black;
+    color: white;
+}
+.avatar-box img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 160px;
+    height: 160px;
+    margin: 15px 0px 25px 0px;
+    display: flex; /* Aktifkan flexbox */
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center;
+
+    
+}
+
+.sidebar, article {
+  background-color: rgb(39, 36, 36);
+  border: 1px solid var(--jet);
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+}
+
+.info-content {
+    text-align: center;
+}
+.info-content h1 {
+    font-weight: 500;
+}
+.info-content p {
+    font-size: 11px;
+    font-weight: 300;
+    background-color: rgb(63, 65, 66);
+    border-radius: 10px;
+    transition: 0.4ms;
+    margin: 0px 1px 0px 10px;
+    transition: 0.4s;
+}
+
+.info-content p:hover {
+    background-color: #666;
+}
+
+
+/* Contacts List */
+.contacts-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon-box {
+  background-color: rgb(63, 65, 66);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 15px;
+  transition: transform 0.5s ease;
+}
+
+.icon-box:hover {
+  transform: scale(1.1);
+  background-color: #666;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-title {
+  font-size: 10px;
+  color: #ddd;
+  margin-bottom: 5px;
+}
+
+.contact-link {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #666;
+}
+
+/* Location Styling */
+address {
+  font-size: 12px;
+  color: #ddd;
+}
+
+/* Social List */
+.social-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-item .social-link {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(63, 65, 66);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 15px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-item .social-link:hover {
+  background-color: #666;
+  transform: scale(1.1);
+}
+
+.about .article-title {
+    font-size: 30px;
+    margin-left: 10px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.about .about-text {
+    margin-left: 10px;
+    margin-right: 15px;
+    font-weight: 300;
+    text-align: justify;
+    margin-top: -15px;
+    
+}
+
+/* Style untuk card */
+.card {
+    width: 150px; 
+    border-radius: 10px; 
+    overflow: hidden;
+    background-color: rgb(63, 65, 66); 
+    margin-left: 10px;
+    margin-right: 50px;
+    transition: 0.4s;
+}
+.card:hover{
+    transform: scale(1.05) ;
+}
+
+/* Style untuk gambar */
+.card-img {
+    position: relative;
+    object-fit: cover;
+    width: 160px;
+    height: 160px;
+    display: block;
+}
+
+/* Konten dalam card */
+.card-content {
+    padding: 15px; 
+}
+
+/* Judul card */
+.card-title {
+    font-size: 17px;
+    margin: 0 0 10px; 
+    color: #ddd; 
+    font-weight: 600;
+}
+
+/* Teks dalam card */
+.card-text {
+    font-size: 10px;
+    color: #ddd;
+    line-height: 1.5; 
+   
+}
+
+.kumpulan-card {
+    display: flex;
+}
+
+
+
+
+
+
+/*-----------------------------------*\
+  #RESPONSIVE
+\*-----------------------------------*/
+
+
+/**
+ * responsive larger than 580px screen
+ */
+
+@media (min-width: 580px) {
+
+
+  /**
+   * #REUSED STYLE
+   */
+
+  .sidebar, article {
+    width: 520px;
+    margin-inline: auto;
+    padding: 30px;
+  }
+
+  .article-title {
+    font-weight: var(--fw-600);
+    padding-bottom: 15px;
+  }
+
+  .article-title::after {
+    width: 40px;
+    height: 5px;
+  }
+
+  .icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    font-size: 18px;
+  }
+
+
+
+  /**
+   * #MAIN
+   */
+
+  main {
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+
+
+
+  /**
+   * #SIDEBAR
+   */
+
+  .sidebar {
+    max-height: 180px;
+    margin-bottom: 30px;
+  }
+
+  .sidebar.active { max-height: 584px; }
+
+  .sidebar-info { gap: 25px; }
+
+  .avatar-box { border-radius: 30px; }
+
+  .avatar-box img { width: 120px; }
+
+  .info-content .name { margin-bottom: 15px; }
+
+  .info-content .title { padding: 5px 18px; }
+
+  .info_more-btn {
+    top: -30px;
+    right: -30px;
+    padding: 10px 15px;
+  }
+
+  .info_more-btn span {
+    display: block;
+    font-size: var(--fs-8);
+  }
+
+
+  .separator { margin: 32px 0; }
+
+  .contacts-list { gap: 20px; }
+
+  .contact-info {
+    max-width: calc(100% - 64px);
+    width: calc(100% - 64px);
+  }
+
+
+  /**
+   * #ABOUT
+   */
+
+  .about .article-title { margin-bottom: 20px; }
+
+  .about-text { margin-bottom: 40px; }
+
+  
+
+}
+
+
+
+
+
+/**
+ * responsive larger than 768px screen
+ */
+
+@media (max-width: 768px) {
+
+
+  .sidebar, article {
+        width: 80%;  
+        padding: 30px;
+        margin: 30px auto;
+        height: 10%;
+
+    }
+  
+
+  .sidebar-info .avatar-box {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    
+  }
+
+    /* Avatar box */
+    .avatar-box img {
+        width: 90px
+        height 90px;  
+        
+
+    }
+    /* Konten informasi */
+    .info-content .name {
+        text-align: center; 
+        margin-bottom: 15px; 
+    }
+
+    .info-content .title {
+        text-align: center;
+    }
+
+    .info-content p {
+        font-size: 12px;
+        padding: 5px 0px 5px 0px;
+        margin-bottom: 24px;  
+    }
+
+    .info_more-btn {
+        display: none;
+    }
+
+    .icon-box {
+        background-color: rgb(63, 65, 66);
+        font-size: 20px;
+        color: #ddd;
+        border-radius: 10px;
+        margin-right: 10px;
+        transition: transform 0.5s ease;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .contact-info p{
+        margin-top: 2px;
+        margin-bottom: -3px;
+    }
+    
+
+    .icon-box:hover {
+        transform: scale(1.1);
+        background-color: #666;
+    }
+
+    
+    /* Layout untuk card */
+    .kumpulan-card {
+      display: grid;
+        gap: 20px;
+        justify-content: center; 
+        
+
+    }
+
+    .card {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0px;
+    }
+
+    
+    /* Teks dalam artikel */
+    .about .article-title {
+        font-size: 20px; 
+        margin-bottom: 20px;
+        margin-left: 0px;
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
+
+    .card-text {
+        font-size: 8px;
+    }
+
+    .card-img {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .about .about-text {
+        text-align: justify;
+        font-size: 12px;  
+        margin-bottom: 10px;
+        margin-left: 0px;
+        margin-right: -0px;
+
+    }
+    .contact-info a {
+        font-weight: 450;
+    }
+
+    /* Social links */
+    .social-list {
+        flex-direction: row;  
+        justify-content: space-around;
+    }
+
+    .social-item .social-link {
+        font-size: 18px;  
+        padding: 11px;
+    }
+
+    /* Contact list */
+    .contacts-list {
+        grid-template-columns: 1fr;  
+        gap: 15px;
+    }
+}
+
+/**
+ * responsive larger than 1024px screen
+ */
+
+@media (min-width: 1024px) {
+
+  
+  .sidebar, article {
+    width: 950px;
+  }
+
+
+
+}
+
+
+
+
+
+/**
+ * responsive larger than 1250px screen
+ */
+
+@media (min-width: 1250px) {
+
+
+  main {
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+
+  .sidebar {
+    position: sticky;
+    top: 60px;
+    max-height: max-content;
+    height: 100%;
+    margin-bottom: 0;
+    padding-top: 60px;
+  }
+
+  .avatar-box img { 
+    width: 150px;
+    margin-left: 35px;
+   }
+
+  .info_more-btn { display: none; }
+
+  
+
+
+  
+
+  
+}
+
+
+
+
+
+
