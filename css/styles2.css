@@ -48,12 +48,18 @@ input, button, textarea, select{
 }
 
 
-
+/*-------*/
 body {
     font-family: "Poppins";
     background-color: black;
     color: white;
 }
+
+main {
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+  
 .avatar-box img {
     border-radius: 50%;
     object-fit: cover;
@@ -263,10 +269,6 @@ address {
 @media (min-width: 580px) {
 
 
-  /**
-   * #REUSED STYLE
-   */
-
   .sidebar, article {
     width: 520px;
     margin-inline: auto;
@@ -274,14 +276,9 @@ address {
   }
 
   .article-title {
-    font-weight: var(--fw-600);
     padding-bottom: 15px;
   }
 
-  .article-title::after {
-    width: 40px;
-    height: 5px;
-  }
 
   .icon-box {
     width: 48px;
@@ -290,16 +287,6 @@ address {
     font-size: 18px;
   }
 
-
-
-  /**
-   * #MAIN
-   */
-
-  main {
-    margin-top: 60px;
-    margin-bottom: 100px;
-  }
 
 
 
@@ -312,41 +299,16 @@ address {
     margin-bottom: 30px;
   }
 
-  .sidebar.active { max-height: 584px; }
-
-  .sidebar-info { gap: 25px; }
-
-  .avatar-box { border-radius: 30px; }
-
-  .avatar-box img { width: 120px; }
 
   .info-content .name { margin-bottom: 15px; }
 
   .info-content .title { padding: 5px 18px; }
 
-  .info_more-btn {
-    top: -30px;
-    right: -30px;
-    padding: 10px 15px;
-  }
-
-  .info_more-btn span {
-    display: block;
-    font-size: var(--fs-8);
-  }
-
 
   .separator { margin: 32px 0; }
 
-  .contacts-list { gap: 20px; }
 
-  .contact-info {
-    max-width: calc(100% - 64px);
-    width: calc(100% - 64px);
-  }
-
-
-  /**
+  /*
    * #ABOUT
    */
 
@@ -354,7 +316,6 @@ address {
 
   .about-text { margin-bottom: 40px; }
 
-  
 
 }
 
